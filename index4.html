@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--DOCTYPE declaration specifying the version of html (html5 in this case)-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Drop Todo App</title><!--Title of the webpage displayed in chrome tab-->
+  <link rel="stylesheet " href="style4.css">
+</head>
+<body>
+
+<main class="box"> <!-- Main tag consisting the main content of the Webpage-->
+<h1 id="heading1">Drag & Drop Todo List </h1>
+
+<div class= "grid-container"><!--Class named grid-container to define the grid like structure having three columns-->
+  <div class="griditem"> <!--First grid item-->
+    <div class="details"></div>
+      <h2>What are you doing today?</h2>
+    
+  
+    <input type="text"  placeholder="Enter" data-name="todo-input" /> 
+   
+    <div class="details">
+      <br>
+       <button class="btn-main" data-name="add-btn">Add</button>
+    </div>
+  </div>
+
+  <div class="griditem"> <!--Second grid item-->
+    <h2>Todos</h2>
+    <ul class="list" data-name="todos-list">
+      <li class="listitem" data-id="1" draggable="true"> <!--Adding list items for demo-->
+        <p>todo1</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+      <li class="listitem" data-id="2" draggable="true" >
+        <p>todo2</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+      <li class="listitem" data-id="3"draggable="true" >
+        <p>todo3</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="girditem" data-name="completed-list"><!--Third grid item-->
+    <h2>Completed</h2>
+    <ul class="list" ></ul>
+  </div>
+</div>
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>
